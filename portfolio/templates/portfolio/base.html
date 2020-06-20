@@ -12,44 +12,58 @@
 
   <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 
-  <link rel="icon" type="image/png" href="{% static "portfolio/logo.jpg" %}">
+  <link rel="icon" type="image/png" href="{% static "portfolio/logo.png" %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Ashmika Ballamudi</title>
 </head>
 
 <body>
+  <div id="back"></div>
+  <div id="front"></div>
 
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+  <nav id="topNav" class="navbar navbar-expand-md ">
+    <nav class="navbar.fixed-bottom">
+
+      <a class="nav-link" href="https://github.com/ashmika-26" target="_blank"> <i class="fa fa-github" style="color:black"></i></a>
+      <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank"><i class = "fa fa-linkedin" style="color:black"></i></a>
+      <a class="nav-link" href="mailto:ashmika.b26@gmail.com"><i class="fa fa-envelope" style="color:black"></i></a>
+
+    </nav>
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/logo.jpg" %}" width="30" height="30" class="d-inline-block align-top" alt="Ashmika's Logo">
-        <span>Ashmika Ballamudi</span>
+        <img src="{% static "portfolio/logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Ashmika's Logo">
+        <span style="color:black;font-weight:bold">Ashmika Ballamudi </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+          <li>
+            <a class="nav-link" href="{% url 'about' %}" >About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url 'project' %}" >Projects</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="{% static "portfolio/resume.pdf" %}">Resume</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:ashmika.b26@gmail.com">Send me an email</a>
-          </li>
           <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+            <a class="nav-link" href="{% url 'blog:all_blogs' %}" >Blog</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <div class="container">
+
     {% block content %}{% endblock %}
+
   </div>
 
   <!-- Optional JavaScript -->

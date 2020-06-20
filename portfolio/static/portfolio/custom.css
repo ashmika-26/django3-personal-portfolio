@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
@@ -7,8 +11,8 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    font-family: 'Roboto Slab';
+    background: linear-gradient(-45deg,salmon,plum,mediumpurple);
 	  background-size: 400% 400%;
 	  animation: gradient 15s ease infinite;
 }
@@ -22,6 +26,24 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 #blogtitle {

@@ -1,0 +1,19 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img src="{% static 'portfolio/hello.jpeg' %}" class="img-fluid">
+  </div>
+</div>
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <h2 id="hometext" class="font-weight-bold">About Me </h2>
+    <p>Hey! My name is Ashmika Ballamudi and I am a Third-year Computer Science student in California State University East Bay. I live in Milpitas, California and enjoy the scenic trails and hikes of California immensely! From an early age, I have been intrested in all things Computing. I remember how excited I was when I built my first Html page in 5th Grade. Now I love working with Django, HTML5, CSS and Bootstrap to create new websites.  </p>
+    <a role="button" class="btn btn-warning btn-lg" href="{% url 'project' %}">My personal Projects here! </a>
+  </div>
+</div>
+
+{% endblock %}
