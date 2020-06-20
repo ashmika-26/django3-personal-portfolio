@@ -26,13 +26,7 @@
   <div id="front"></div>
 
   <nav id="topNav" class="navbar navbar-expand-md ">
-    <nav class="navbar.fixed-bottom">
 
-      <a class="nav-link" href="https://github.com/ashmika-26" target="_blank"> <i class="fa fa-github" style="color:black"></i></a>
-      <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank"><i class = "fa fa-linkedin" style="color:black"></i></a>
-      <a class="nav-link" href="mailto:ashmika.b26@gmail.com"><i class="fa fa-envelope" style="color:black"></i></a>
-
-    </nav>
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static "portfolio/logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Ashmika's Logo">
@@ -59,7 +53,13 @@
       </div>
     </div>
   </nav>
+  <nav class="navbar.fixed-bottom">
 
+    <a class="nav-link" href="https://github.com/ashmika-26" target="_blank"> <i class="fa fa-github" style="color:black"></i></a>
+    <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank"><i class = "fa fa-linkedin" style="color:black"></i></a>
+    <a class="nav-link" href="mailto:ashmika.b26@gmail.com"><i class="fa fa-envelope" style="color:black"></i></a>
+
+  </nav>
   <div class="container">
 
     {% block content %}{% endblock %}
