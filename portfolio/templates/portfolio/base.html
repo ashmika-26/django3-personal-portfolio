@@ -49,17 +49,20 @@
           <li>
             <a class="nav-link" href="{% url 'blog:all_blogs' %}" >Blog</a>
           </li>
+          <li>
+            <a class="nav-link" href="https://github.com/ashmika-26" target="_blank"> <i class="fa fa-github" style="color:black"></i></a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank"><i class = "fa fa-linkedin" style="color:black"></i></a>
+          </li>
+          <li>
+              <a class="nav-link" href="mailto:ashmika.b26@gmail.com"><i class="fa fa-envelope" style="color:black"></i></a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <nav class="navbar.fixed-bottom">
-
-    <a class="nav-link" href="https://github.com/ashmika-26" target="_blank"> <i class="fa fa-github" style="color:black"></i></a>
-    <a class="nav-link" href="https://www.linkedin.com/in/ashmika-ballamudi/" target="_blank"><i class = "fa fa-linkedin" style="color:black"></i></a>
-    <a class="nav-link" href="mailto:ashmika.b26@gmail.com"><i class="fa fa-envelope" style="color:black"></i></a>
-
-  </nav>
+  
   <div class="container">
 
     {% block content %}{% endblock %}
